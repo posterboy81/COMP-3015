@@ -24,10 +24,6 @@ function getDayOfTheWeek($year, $month, $day)
     // codes for each month as specified in lab spec. associative array. 
     $monthCode = array(1 => 1, 2 => 4, 3 => 4, 4 => 0, 5 => 2, 6 => 5, 7 => 0, 8 => 3, 9 => 6, 10 => 1, 11 => 4, 12 => 6);
 
-    if(strlen($month) == 2){
-        $month = substr($month, 1, 1);
-    };
-
     // determine the actual month code 
     $monthAddCode = $monthCode[$month];
     $modMonthAmt = monthMod($year, $month, $twoDigitCent);
@@ -44,6 +40,7 @@ function getDayOfTheWeek($year, $month, $day)
 };
 
 // helper function to determine modifications to the month code based on leap year and/or century. returns an integer amount. 
+// this should be decomposed into two functions.  
 function monthMod($year, $month, $cent)
 {
     $monthChange = 0;
@@ -92,7 +89,7 @@ function makeCalendar()
         $date = $startDate;
         $date->modify('+1 day');
         $dateYear = $date->format('Y');
-        $dateMonth = $date->format('m');
+        $dateMonth = $date->format('n');
         $dateDay = $date->format('d');
 
         echo getDayOfTheWeek($dateYear, $dateMonth, $dateDay);
