@@ -85,7 +85,7 @@ echo makeCalendar();
 function makeCalendar()
 {
     $startDate = new DateTime('2021-12-31');
-    for($x = 0; $x < 364; $x++){
+    for ($x = 0; $x < 364; $x++) {
         $date = $startDate;
         $date->modify('+1 day');
         $dateYear = $date->format('Y');
@@ -95,6 +95,4 @@ function makeCalendar()
         echo getDayOfTheWeek($dateYear, $dateMonth, $dateDay);
         // echo $dateMonth . "-" . $dateDay . "-" . $dateYear . "<br>"; 
     }
-
-
 };
