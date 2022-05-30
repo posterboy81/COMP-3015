@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: large;
+}
+h2 {
+  font-size: small;
+}
+form label {
+  font-size: small;
+}
