@@ -1,0 +1,17 @@
+{
+    "name": "matthewsimpson/04",
+    "require": {
+        "cloudinary/cloudinary_php": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Matthewsimpson\\04\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matthew Simpson",
+            "email": "45255318+posterboy81@users.noreply.github.com"
+        }
+    ]
+}
