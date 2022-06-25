@@ -1,10 +1,21 @@
 <?php
+require "vendor/autoload.php";
 
-use Cloudinary\Cloudinary;
+use Cloudinary\Configuration\Configuration;
+use Cloudinary\Api\Upload\UploadApi;
 
-$c = new Cloudinary();
-
-
+Configuration::instance(
+  [
+    'cloud' => [
+      'cloud_name' => 'dpm6gzkcz',
+      'api_key' => '377732873555571',
+      'api_secret' => '089zWhfh3n_vEYKIK9UwQPvUmmk'
+    ],
+    'url' => [
+      'secure' => true
+    ]
+  ]
+);
 
 const MAX_FILESIZE = 2000000;
 const FILE_TYPE = "image/jpeg";
@@ -25,6 +36,9 @@ if ($_FILES['profile_picture']['type'] == FILE_TYPE && $_FILES['profile_picture'
   $picture    = 'upload/' . md5(time() . $_FILES['profile_picture']['name']);
 
   move_uploaded_file($_FILES['profile_picture']['tmp_name'], $picture);
+  $uapi = new UploadApi();
+  $result = $uapi->upload($picture);
+  print_r($result);
 } else {
   echo "Invalid profile picture!";
   exit;
