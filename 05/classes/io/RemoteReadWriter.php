@@ -1,6 +1,6 @@
 <?php
 class RemoteReadWriter implements IReadWritable {
-    public function getCourses() {
+    public function getCourses(array $courseList) {
         return "remote courses";
     }
 

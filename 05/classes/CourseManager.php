@@ -16,11 +16,12 @@ class CourseManager {
     }
 
     public function getCourses() {
-        $this->persist->getCourses();
+        return $this->persist->getCourses($this->courses);
     }
 
     public function addCourse(Course $course) {
-        $this->persist->addCourse($course);
+        array_push($this->courses, $course);
+        //$this->persist->addCourse($course);
     }
 
     public function delCourse(string $courseID) {

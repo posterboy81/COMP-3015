@@ -1,7 +1,8 @@
 <?php
+
 class LocalReadWriter implements IReadWritable {
-    public function getCourses() {
-        return "courses";
+    public function getCourses(array $courseList) {
+        return $courseList;
     }
 
     public function addCourse($course) {
