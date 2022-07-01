@@ -1,0 +1,69 @@
+body {
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header styles */
+
+header {
+  background-color: rgb(2, 22, 2);
+  color: white;
+  padding: 10px;
+  margin: 0px;
+}
+
+header h1 {
+  color: white;
+  padding-left: 10%;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul {
+  padding-left: 10%;
+}
+
+header ul li {
+  display: inline-block;
+  width: 100px;
+}
+
+header ul li a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+header ul li a:hover {
+  background: white;
+  color: rgb(2, 22, 2);
+}
+
+main {
+  color: black;
+}
+
+button {
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.welcome {
+  width: 100%;
+  height: 100px;
+}
+
+.welcome h2 {
+  padding: 20px;
+}
+
+.errormsg {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.7em;
+  color: red;
+  padding-left: 20px;
+}
