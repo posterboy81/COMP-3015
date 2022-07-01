@@ -1678,3 +1678,16 @@
 04/vendor/teapot/status-code/src/Vendor/Symfony.php
 04/vendor/teapot/status-code/src/Vendor/Twitter.php
 .DS_Store
+phpauthdemo/footer.php
+phpauthdemo/header.php
+phpauthdemo/index.php
+phpauthdemo/signup.php
+phpauthdemo/pages/dashboard/dashboard.php
+phpauthdemo/pages/dashboard/dashboard.view.php
+phpauthdemo/pages/login/database.php
+phpauthdemo/pages/login/login.php
+phpauthdemo/pages/login/login.view.php
+phpauthdemo/pages/login/loginHandler.php
+phpauthdemo/pages/login/loginHelpers.php
+phpauthdemo/pages/login/logout.php
+phpauthdemo/pages/login/useAuth.php
