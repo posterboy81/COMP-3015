@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small
+}
+
+fieldset {
+    border: none;
+}
+
+h1 {
+    font-size: large;
+}
+
+h2 {
+    font-size: medium;
+}
+
+label {
+    font-size: small;
+}
+
+.button {
+    font-size: xx-small;
+}
+
+.addbutton {
+    background-color: green;
+    color: white;
+
+}
+
+.delbutton {
+    background-color: maroon;
+    color: white;
+}
