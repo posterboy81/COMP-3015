@@ -11,8 +11,8 @@ include('./classes/io/LocalReadWriter.php');
 $StudentMatthew = new CourseManager('Matthew', new LocalReadWriter());
 
 // two new courss 
-$bcit3015 = new Course("COMP 3015", true, "comp3015");
-$bcit3012 = new Course("COMP 3012", true, "comp3012");
+$bcit3015 = new Course("COMP 3015", "comp3015", true);
+$bcit3012 = new Course("COMP 3012", "comp3012", true);
 
 // add the coures to the manager
 $StudentMatthew->addCourse($bcit3015);
