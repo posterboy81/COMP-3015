@@ -12,5 +12,5 @@ unset($_SESSION['PHPSESSID']);
 $_SESSION = array();
 
 // Include URL for Login page to login again.
-header("Location: ../index.php");
+header("Location: ./index.php");
 exit;

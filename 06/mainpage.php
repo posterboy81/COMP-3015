@@ -1,16 +1,16 @@
 <?php
 
-require_once "../functions/loginmethods.php";
+require "./login.php";
 
 $user = getLoggedInUser();
 // Restricted route
 if (!$user) {
-    header("location: ../functions/login.php");
+    header("location: ./login.php");
     exit();
 }
 
-include "../pages/header.php";
-include "../pages/menu.php"; ?>
+include "./header.php";
+include "./menu.php"; ?>
 
 <main>
     <div class="welcome">
@@ -28,4 +28,4 @@ include "../pages/menu.php"; ?>
 </main>
 
 
-<?php include "../pages/footer.php" ?>
+<?php include ".footer.php" ?>

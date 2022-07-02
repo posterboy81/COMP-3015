@@ -1,9 +1,10 @@
 <?php
-require_once "./loginmethods.php";
+include "./loginmethods.php";
 
 // grab the emil and password from the POST
 $email = $_POST["email"];
 $password = $_POST["password"];
+error_log(print_r("⭐️⭐️⭐️-login.php email : " . $email . " password: " . $password, true));
 
 // check if either login field is empty
 if (checkForEmptyFields($email, $password)) {

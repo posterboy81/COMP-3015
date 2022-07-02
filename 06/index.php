@@ -1,8 +1,8 @@
-<?php include "./pages/header.php" ?>
-<?php include "./pages/menu.php" ?>
+<?php include "./header.php" ?>
+<?php include "./menu.php" ?>
 
 <main>
-    <form method="post" action="./functions/login.php">
+    <form method="post" action="./login.php">
         <fieldset>
             <div class="form-element">
                 <?= $error ?>
@@ -27,4 +27,4 @@
 
 </main>
 
-<?php include "./pages/footer.php" ?>
+<?php include "./footer.php" ?>
