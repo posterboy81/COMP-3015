@@ -46,6 +46,11 @@ main {
   color: black;
 }
 
+main h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 button {
   background-color: aquamarine;
   border-radius: 10px;

@@ -1,11 +1,12 @@
-<?php include "./header.php" ?>
-<?php include "./menu.php" ?>
+<?php require("./views/page-top.php"); ?>
+<?php require("./views/page-menu.php"); ?>
 
 <main>
-    <form method="post" action="./login.php">
+    <form method="post" action="./function/login.php">
         <fieldset>
             <div class="form-element">
-                <?= $error ?>
+                <h3>Enter your email & password:</h3>
+                <!--<?= $error ?>-->
             </div>
             <div class="form-element">
                 <label for="password" class="label">
@@ -24,7 +25,8 @@
             </div>
         </fieldset>
     </form>
-
 </main>
+<footer></footer>
+</body>
 
-<?php include "./footer.php" ?>
+</html>

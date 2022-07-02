@@ -1,7 +1,8 @@
 <?php
-if (!isset($_SESSION)) {
-    session_start();
-    setcookie("PHPSESSID", "", time() - 3600, '/');
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+    setcookie ("PHPSESSID", "", time() - 3600, '/');
 }
 
 // Finally, destroy the session.    
@@ -12,5 +13,5 @@ unset($_SESSION['PHPSESSID']);
 $_SESSION = array();
 
 // Include URL for Login page to login again.
-header("Location: ./index.php");
+header("Location: /");
 exit;
